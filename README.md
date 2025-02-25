@@ -19,7 +19,7 @@ Ensure you have [Docker](https://www.docker.com/) installed to run the database 
 
 #### Run MongoDB Container
 ```sh
-docker run --name mongo -p 27017:27017 -d mongo
+docker run --name mongodb -p 27017:27017 -d mongodb
 ```
 This command will:
 - Pull the latest MongoDB image (if not already available)
@@ -41,15 +41,15 @@ http://localhost:<your-port>
 ### Additional Commands
 - **Stop MongoDB Container:**
   ```sh
-  docker stop mongo
+  docker stop db
   ```
 - **Remove MongoDB Container:**
   ```sh
-  docker rm mongo
+  docker rm mongodb
   ```
 - **Restart MongoDB Container:**
   ```sh
-  docker start mongo
+  docker start mongodb
   ```
 
 ---
